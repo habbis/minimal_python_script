@@ -1,0 +1,23 @@
+#! /usr/bin/env python3
+"""
+minimal python script
+"""
+from __future__ import print_function
+import argparse
+import os
+
+def main():
+    arg_parser  = argparse.ArgumentParser(description=__doc__)
+    arg_parser.add_argument("-n", "--name", dest="test", help="desctription of the flag")
+
+     # We parse the args here to do some additional
+    # obscure checks
+    parsed_args = arg_parser.parse_args()
+
+
+    #for line in args.input:
+    #    print(line.strip(), file=args.output)
+    print (parsed_args.test)
+
+if __name__ == "__main__":
+    main()
