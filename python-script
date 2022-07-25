@@ -15,8 +15,7 @@ def main():
     parsed_args = arg_parser.parse_args()
 
 
-    #for line in args.input:
-    #    print(line.strip(), file=args.output)
+  
     print (parsed_args.test)
 
 if __name__ == "__main__":
