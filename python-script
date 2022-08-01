@@ -8,15 +8,18 @@ import os
 
 def main():
     arg_parser  = argparse.ArgumentParser(description=__doc__)
-    arg_parser.add_argument("-n", "--name", dest="test", help="desctription of the flag")
+    arg_parser.add_argument("-n", "--name", help="desctription of the flag")
 
      # We parse the args here to do some additional
     # obscure checks
     parsed_args = arg_parser.parse_args()
+    
+    
+    name     =  parsed_args.name
 
 
   
-    print (parsed_args.test)
+    print (name)
 
 if __name__ == "__main__":
     main()
